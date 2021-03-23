@@ -11,7 +11,7 @@ html {
 html,
 body {
     font-family: Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.5;
 }
 
@@ -32,37 +32,37 @@ h5,
 h6 {
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 h1 {
-    font-size: 34px;
+    font-size: 2.125rem;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 h6 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 hr {
     border: 0;
-    border-top: 1px solid #eee;
-    margin: 20px 0;
+    border-top: 0.0625rem solid #eee;
+    margin: 1.25rem 0;
 }
 
 article,
@@ -86,11 +86,11 @@ section {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 87.5rem;
 }
 
 .auto {
-    max-width: 1140px;
+    max-width: 71.25rem;
 }
 
 .content:after,
@@ -105,10 +105,9 @@ section {
 main,
 main>.left-content,
 main>.right-content {
-    padding: 0 8px;
+    padding: 0 0.5rem;
 }
 
-.col,
 .left-content,
 .right-content {
     float: left;
@@ -118,13 +117,13 @@ main>.right-content {
 .card-left {
     color: #757575;
     background-color: #FFFFFF;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.2), 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-right {
     color: #000000;
     background-color: #FFFFFF;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.16), 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-left a,
@@ -178,8 +177,8 @@ img {
 }
 
 .progress-bar-bg {
-    color: #000;
-    background-color: #f1f1f1;
+    color: #000000;
+    background-color: #F1F1F1;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -205,23 +204,23 @@ img {
 /* MARGINS */
 
 .margin {
-    margin: 16px !important;
+    margin: 1rem !important;
 }
 
 .margin-top {
-    margin-top: 16px !important;
+    margin-top: 1rem !important;
 }
 
 .margin-bottom {
-    margin-bottom: 16px !important;
+    margin-bottom: 1rem !important;
 }
 
 .margin-left {
-    margin-left: 16px !important;
+    margin-left: 1rem !important;
 }
 
 .margin-right {
-    margin-right: 16px !important;
+    margin-right: 1rem !important;
 }
 
 /* FLOAT */
@@ -242,13 +241,17 @@ img {
 }
 
 .tag {
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #FFFFFF;
     display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
 }
 
 .footer-content {
@@ -263,7 +266,7 @@ img {
 .card-footer {
     color: #FFFFFF;
     background-color: #000000;
-    padding: 32px 0;
+    padding: 2rem 0;
 }
 
 .card-footer>a {

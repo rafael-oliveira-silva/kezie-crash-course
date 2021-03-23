@@ -14,11 +14,7 @@
     <meta name="author" content="Rafael de Oliveira Silva">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/base.css">
-    <link rel="stylesheet" href="dist/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="dist/favicon/favicon-16x16.png">
@@ -28,28 +24,36 @@
 
     <header>
 
-        <!-- CAIXA DA FOTO DE PERFIL -->
+        <div class="container">
 
-        <div>
-            <figure>
-                <img src="" alt="Rafael de Oliveira Silva">
-                <figcaption>Rafael de Oliveira Silva</figcaption>
-        </div>
+            <div class="flex">
 
-        <!-- INFORMAÇÕES PESSOAIS  -->
+                <!-- CAIXA DA FOTO DE PERFIL -->
 
-        <div>
+                <div class="column left-column">
+                    <figure>
+                        <img src="/assets/img/hudson.png" alt="Rafael de Oliveira Silva">
+                        <figcaption class="hidden">Rafael de Oliveira Silva</figcaption>
+                </div>
 
-            <h1>Rafael de Oliveira Silva</h1>
-            <p>Desenvolvedor Front-End Junior</p>
+                <!-- INFORMAÇÕES PESSOAIS  -->
 
-            <ul>
-                <li><a href="mailto:raosilva3@gmail.com">raosilva3@gmail.com</a></li>
-                <li><a href="tel:+5511947485240">(011) 9 4748-5240</a></li>
-                <li><a href="https://www.google.com/maps/place/Alameda+Dom+Pedro+de+Alc%C3%A2ntara,+1486+-+Nova+Petr%C3%B3polis,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09771-281/@-23.7117151,-46.53248,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce41f1fb8882cf:0xa8990846bf12ca1c!8m2!3d-23.7117151!4d-46.5302913"
-                        target="_blank">Alameda Dom Pedro de Alcântara, 1486, Nova Petrópolis - São Bernardo do
-                        Campo/SP</a></li>
-            </ul>
+                <div class="column right-column">
+
+                    <h1>Rafael de Oliveira Silva</h1>
+                    <p>Desenvolvedor Front-End Junior</p>
+
+                    <ul>
+                        <li><a href="mailto:raosilva3@gmail.com">raosilva3@gmail.com</a></li>
+                        <li><a href="tel:+5511947485240">(011) 9 4748-5240</a></li>
+                        <li><a href="https://www.google.com/maps/place/Alameda+Dom+Pedro+de+Alc%C3%A2ntara,+1486+-+Nova+Petr%C3%B3polis,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09771-281/@-23.7117151,-46.53248,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce41f1fb8882cf:0xa8990846bf12ca1c!8m2!3d-23.7117151!4d-46.5302913"
+                                target="_blank">Alameda Dom Pedro de Alcântara, 1486, Nova Petrópolis - São Bernardo do
+                                Campo/SP</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -57,90 +61,106 @@
 
     <main>
 
-        <!-- CONTEÚDO LADO ESQUERDO -->
+        <div class="container">
 
-        <div>
+            <div class="flex">
 
-            <section>
+                <!-- CONTEÚDO LADO ESQUERDO -->
 
-                <h2>Perfil Profissional</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ad debitis totam error culpa dolorum
-                    natus ipsum est fugiat ullam accusantium, eligendi at labore ea dolor, necessitatibus porro
-                    accusamus placeat.</p>
+                <div class="column left-column">
 
-            </section>
+                    <section>
 
-            <section>
+                        <h2>Perfil Profissional</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ad debitis totam error culpa
+                            dolorum
+                            natus ipsum est fugiat ullam accusantium, eligendi at labore ea dolor, necessitatibus porro
+                            accusamus placeat.</p>
 
-                <h2>Especialidades</h2>
+                    </section>
 
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>ReactJS</li>
-                </ul>
+                    <section>
 
-            </section>
+                        <h2>Especialidades</h2>
 
-            <section>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Javascript</li>
+                            <li>ReactJS</li>
+                        </ul>
 
-                <h2>Cursos</h2>
+                    </section>
 
-                <ul>
-                    <li>HTML5 - Kenzie Academy</li>
-                    <li>CSS3 - Kenzie Academy</li>
-                    <li>Javascript - Kenzie Academy</li>
-                    <li>ReactJS - Kenzie Academy</li>
-                </ul>
+                    <section>
 
-            </section>
+                        <h2>Cursos</h2>
 
+                        <ul>
+                            <li>HTML5 - Kenzie Academy</li>
+                            <li>CSS3 - Kenzie Academy</li>
+                            <li>Javascript - Kenzie Academy</li>
+                            <li>ReactJS - Kenzie Academy</li>
+                        </ul>
+
+                    </section>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <!-- CONTEÚDO LADO DIREITO -->
+        <div class="container">
 
-        <div>
+            <div class="flex">
 
-            <section>
-                <h2>Experiência</h2>
+                <!-- CONTEÚDO LADO DIREITO -->
 
-                <ul>
-                    <li>
-                        <h3>Facilitador de Treinamento</h3>
-                        <strong>Nome da Empresa: </strong>
-                        <p>Período do empregador. de 2020 - O momento, Localidade: São Paulo/SP</p>
-                    </li>
+                <div class="column right-column">
 
-                    <li>
-                        <h3>Facilitador de Treinamento</h3>
-                        <strong>Nome da Empresa: </strong>
-                        <p>Período do empregador. de 2020 - O momento, Localidade: São Paulo/SP</p>
-                    </li>
+                    <section>
+                        <h2>Experiência</h2>
 
-                    <li>
-                        <h3>Facilitador de Treinamento</h3>
-                        <strong>Nome da Empresa: </strong>
-                        <p>Período do empregador. de 2020 - O momento, Localidade: São Paulo/SP</p>
-                    </li>
-                </ul>
-            </section>
+                        <ul>
+                            <li>
+                                <h3>Facilitador de Treinamento</h3>
+                                <strong>Nome da Empresa: </strong>
+                                <p>Período do empregador. de 2020 - O momento, Localidade: São Paulo/SP</p>
+                            </li>
 
-            <section>
+                            <li>
+                                <h3>Facilitador de Treinamento</h3>
+                                <strong>Nome da Empresa: </strong>
+                                <p>Período do empregador. de 2020 - O momento, Localidade: São Paulo/SP</p>
+                            </li>
 
-                <ul>
-                    <li>
-                        <h3>Formação 1 <strong>01/01/2018-01/01/2020</strong></h3>
-                        <p>Instituição</p>
-                    </li>
+                            <li>
+                                <h3>Facilitador de Treinamento</h3>
+                                <strong>Nome da Empresa: </strong>
+                                <p>Período do empregador. de 2020 - O momento, Localidade: São Paulo/SP</p>
+                            </li>
+                        </ul>
+                    </section>
 
-                    <li>
-                        <h3>Formação 1 <strong>01/01/2018-01/01/2020</strong></h3>
-                        <p>Instituição</p>
-                    </li>
-                </ul>
-            </section>
+                    <section>
+
+                        <ul>
+                            <li>
+                                <h3>Formação 1 <strong>01/01/2018-01/01/2020</strong></h3>
+                                <p>Instituição</p>
+                            </li>
+
+                            <li>
+                                <h3>Formação 1 <strong>01/01/2018-01/01/2020</strong></h3>
+                                <p>Instituição</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+            </div>
+
         </div>
 
     </main>
@@ -148,7 +168,7 @@
     <footer>
 
         <nav>
-            <ul>
+            <ul class="contact-info"> 
                 <li><a href="mailto:raosilva3@gmail.com">raosilva3@gmail.com</a></li>
                 <li><a href="tel:+5511947485240">(011) 9 4748-5240</a></li>
                 <li><a href="https://www.google.com/maps/place/Alameda+Dom+Pedro+de+Alc%C3%A2ntara,+1486+-+Nova+Petr%C3%B3polis,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09771-281/@-23.7117151,-46.53248,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce41f1fb8882cf:0xa8990846bf12ca1c!8m2!3d-23.7117151!4d-46.5302913"
@@ -158,9 +178,11 @@
         </nav>
 
         <nav>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="Linkedin">Linkedin</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="Github">Github</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="Facebook">Facebook</a></li>
+            <ul class="social-media">
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"><img src="/assets/img/linkedin.svg" alt="Linkedin"> <p> Linkedin </p> </a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"><img src="/assets/img/github-big-logo.svg" alt="Github"> <p> Github </p></a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"><img src="/assets/img/facebook-app-symbol.svg" alt="Facebook"> <p> Facebook </p></a></li>
+        </ul>
         </nav>
 
     </footer>
