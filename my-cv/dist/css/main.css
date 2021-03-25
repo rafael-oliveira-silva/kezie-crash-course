@@ -8,6 +8,17 @@ html {
     box-sizing: inherit;
 }
 
+:root {
+    --mainBgColor: #FFFFFF;
+    --footerBgColor: #000000;
+    --mainText: #000000;
+    --secondaryText: #FFFFFF;
+    --thirdColorText: #000000;
+    --lightGreyText: #F1F1F1;
+    --GreyText: #757575;
+    --tag: #FFFFFF;
+}
+
 html,
 body {
     font-family: Verdana, sans-serif;
@@ -20,7 +31,7 @@ html {
 }
 
 body {
-    color: #000000;
+    color: var(--mainText);
     background-color: #F1F1F1;
 }
 
@@ -61,7 +72,7 @@ h6 {
 
 hr {
     border: 0;
-    border-top: 0.0625rem solid #eee;
+    border-top: 0.0625rem solid #EEEEEE;
     margin: 1.25rem 0;
 }
 
@@ -115,20 +126,20 @@ main>.right-content {
 }
 
 .card-left {
-    color: #757575;
-    background-color: #FFFFFF;
+    color: var(--GreyText);
+    background-color: var(--mainBgColor);
     box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.2), 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-right {
-    color: #000000;
-    background-color: #FFFFFF;
+    color: var(--mainText);
+    background-color: var(--mainBgColor);
     box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.16), 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-left a,
 .card-right a {
-    color: #757575;
+    color: var(--GreyText);
 }
 
 /* FOTO DE PERFIL */
@@ -155,7 +166,7 @@ img {
     position: absolute;
     left: 0;
     bottom: 0;
-    color: #000000;
+    color: var(--mainText);
 }
 
 .content {
@@ -163,22 +174,22 @@ img {
 }
 
 .full-text {
-    color: #000000;
+    color: var(--mainText);
     font-size: 1.125rem;
 }
 
 .black-text {
-    color: #000000;
+    color: var(--mainText);
 }
 
 .grey-text {
-    color: #757575;
+    color: var(--GreyText);
     padding: 1rem 0;
 }
 
 .progress-bar-bg {
-    color: #000000;
-    background-color: #F1F1F1;
+    color: var(--mainText);
+    background-color: var(--lightGreyText);
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -197,8 +208,8 @@ img {
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-    background-color: #000000;
-    color: #F1F1F1;
+    background-color: var(--footerBgColor);
+    color: var(--lightGreyText);
 }
 
 /* MARGINS */
@@ -241,8 +252,8 @@ img {
 }
 
 .tag {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--footerBgColor);
+    color: var(--tag);
     display: inline-block;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -256,7 +267,6 @@ img {
 
 .footer-content {
     text-align: center;
-    margin-top: 1rem;
     padding: 0;
     display: block;
     width: auto;
@@ -266,13 +276,89 @@ img {
 .card-footer {
     color: #FFFFFF;
     background-color: #000000;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
-.card-footer>a {
-    color: #FFFFFF;
+footer .card-footer p {
+    font-size: 1.125rem;
 }
 
+footer .card-footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer .card-footer ul li {
+    padding: 0 0.875rem;
+}
+
+footer .card-footer ul li a {
+    color: var(--secondaryText);
+    font-size: 2rem;
+}
+
+#dark-mode {
+    display: none;
+}
+
+.dark-mode-switcher-area {
+    border: 1px solid var(--secondaryText);
+    background: var(--footerBgColor);
+    border-radius: 2rem;
+    width: 4.5rem;
+    height: 2.5rem;
+    padding: 0.2rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 5.125rem;
+}
+
+.dark-mode-switcher-button {
+    position: relative;
+    display: block;
+    background: #F1AA02;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 2px dashed var(--footerBgColor);
+    transition: 0.3s;
+}
+
+.dark-mode-switcher-button::after {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    content: "";
+    background: var(--footerBgColor);
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#dark-mode:checked+#dark-container .dark-mode-switcher-button {
+    transform: translateX(100%);
+    border: none;
+}
+
+#dark-mode:checked+#dark-container .dark-mode-switcher-button::after {
+    opacity: 1;
+}
+
+#dark-mode:checked+#dark-container {
+    --mainBgColor: #000000;
+    --footerBgColor: #FFFFFF;
+    --mainText: #FFFFFF;
+    --secondaryText: #FFFFFF;
+    --thirdColorText: #000000;
+    --lightGreyText: #757575;
+    --GreyText: #F1F1F1;
+    --tag: #000000;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
 
 /* RESPONSIVIDADE */
 
@@ -280,11 +366,10 @@ img {
     .left-content {
         width: 33.33333%;
     }
-    
+
     .right-content {
         width: 66.66666%;
     }
 }
 
-@media (min-width: 993px) {
-}
+@media (min-width: 993px) {}
